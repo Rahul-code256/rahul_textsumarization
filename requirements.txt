@@ -2,6 +2,6 @@ stremlit
 langchain
 langchain_community
 langchain-groq
-goeq
+groq
 tiktoken
 transformers
