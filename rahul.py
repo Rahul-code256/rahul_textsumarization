@@ -2,7 +2,7 @@ import streamlit as st
 from langchain_groq import ChatGroq
 from langchain_core.documents import Document
 from langchain_text_splitters import CharacterTextSplitter
-from langchain_community.chains.summarize import load_summarize_chain
+from langchain.chains.summarize import load_summarize_chain
 
 # Page title
 st.set_page_config(page_title='PragyanAI-Text Summarization App')
