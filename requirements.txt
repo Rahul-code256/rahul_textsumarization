@@ -1,7 +1,9 @@
 streamlit
 langchain
+langchain-core
 langchain-community
 langchain-groq
 groq
 tiktoken
 transformers
+torch --extra-index-url https://download.pytorch.org/whl/cpu
