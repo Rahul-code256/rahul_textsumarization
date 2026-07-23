@@ -25,12 +25,15 @@ def generate_response(txt):
     text_splitter = CharacterTextSplitter()
     texts = text_splitter.split_text(txt)
     
-    # Create Document objects using updated langchain_core
+    # Create Document objects
     docs = [Document(page_content=t) for t in texts]
     
     # Summarize documents
     chain = load_summarize_chain(llm, chain_type='map_reduce')
-    return chain.invoke(docs)  # Updated from deprecated .run()
+    
+    # Run the chain and safely extract the generated text
+    res = chain.invoke(docs)
+    return res.get("output_text", res)
 
 # Text input
 txt_input = st.text_area('Enter your text', '', height=200)
