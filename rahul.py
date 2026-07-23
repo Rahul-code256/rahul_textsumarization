@@ -50,7 +50,7 @@ with st.form('summarize_form', clear_on_submit=True):
     submitted = st.form_submit_button('Submit')
     #if submitted and openai_api_key.startswith('sk-'):
     if submitted:
-    with st.spinner('Calculating...'):
+with st.spinner('Calculating...'):
         response = generate_response(txt_input)
         result.append(response)
            # del openai_api_key
