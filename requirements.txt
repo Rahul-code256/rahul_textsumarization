@@ -4,3 +4,4 @@ torch
 torchvision
 langchain
 langchain-groq
+langchain-text-splitters
