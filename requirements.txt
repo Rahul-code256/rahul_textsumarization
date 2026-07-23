@@ -1,3 +1,5 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 streamlit
 langchain
 langchain-core
@@ -6,4 +8,5 @@ langchain-groq
 groq
 tiktoken
 transformers
-torch --extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
